@@ -11,7 +11,7 @@
      quisquam, quia non natus quas, dolores, iusto nostrum. Laudantium?
   </p>
 
-  <table border="20" style="color: blue;">
+  <table border="30" style="color: blue;">
     <tr>
       <td>sno </td> <td> team name </td> <td> place </td>
     </tr>
@@ -26,7 +26,46 @@
     <tr>
       <td>3</td><td>DC</td> <td>DELHI</td>
     </tr>
+    <tr>
+      <td>4</td><td>SRH</td> <td>HYDRABAD</td>
+    </tr>
+    <tr>
+      <td>5</td><td>PBKS</td> <td>PUNJAP</td>
+    </tr>
+    <tr>
+      <td>6</td><td>MI</td> <td>MUMBAI INDINS</td>
+    </tr>
+    <tr>
+      <td>7</td><td>KKR</td> <td>KOLKATA</td>
+    </tr>
+    <tr>
+      <td>8</td><td>GT</td> <td>GUJARAT</td>
+    </tr>
     
     
   </table>
+  <br>
+  <div class="list">
+     TEAM NAME : <input type="text">
+     <br> <br>
+      TEAM PLACE : <input type="text"> <br><br>
+
+      TOTAL CUP : <input type="number"> <br><br>
+      CAPTAIN NAME : <input type="text"> 
+     </div>
+     <br> <br>
+     <button id="okbtn">SUBMIT</button>  <button id="canclebtn">CLEAR</button>
 </center>
+<script>
+  let okbtn=document.getElementById("okbtn");
+  let canclebtn=document.getElementById("canclebtn");
+  okbtn.addEventListener("click",()=>{
+    alert("your data submitted successfully");
+  });
+  canclebtn.addEventListener("click",()=>{
+    TEAMNAME.value="";
+    TEAMPLACE.value="";
+    TOTALCUP.value="";
+    CAPTAINNAME.value="";
+  });
+</script>
